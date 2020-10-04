@@ -83,7 +83,7 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
+#centre-ville {
     color:rgb(48, 48, 48);
     font-size: 1.1em;
     font-weight: normal;
@@ -211,4 +211,140 @@ h2 {
 .infos-logements {
     display: flex;
     align-items: center;
+    margin-bottom: 1%;
+}
+
+.part-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.section_hebergements {
+    background-color: rgb(243, 243, 243);
+    border-radius: 30px;
+    height:670px;
+    padding:40px;
+    margin-right:1%;
+}
+
+.liste-hebergements  {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    /*align-content: space-between;*/
+}
+
+.liste-hebergements article {
+    width: 29%;
+    height: 230px;
+    padding:7px;
+    margin-bottom:3%;
+    background-color: white;
+    border-radius: 30px;
+    float:left;
+}
+
+.img-hebergements {
+    width:100%;
+    height:65%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+}
+
+.etoiles {
+    display: flex;
+    flex-direction: row;
+    color: #3d8afd;
+}
+
+.etoiles-grises {
+    display: flex;
+    flex-direction: row;
+    color: rgb(216, 216, 216);
+}
+
+.description-hebergements {
+    padding-top:0px;
+    padding-left:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    margin:0;
+}
+
+.description-hebergements h2 {
+    font-size:1em;
+    line-height: 0.5em;
+}
+
+.description-hebergements p {
+    font-size:0.9em;
+    line-height: 0.5em;
+}
+
+.etoiles .fas {
+    font-size:0.8em;
+}
+
+.section_populaires {
+    background-color: rgb(243, 243, 243);
+    border-radius: 30px;
+    width: 30%;
+    height:670px;
+    padding:40px;
+    margin-left: 1%;
+}
+
+.liste-populaires  {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between; /*Ne fonctionne pas*/
+}
+
+.header-populaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-populaire .fas {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.img-populaires {
+    width:40%;
+    height:100%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+}
+
+.description-populaires {
+    padding-top:0px;
+    padding-left:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    margin:0;
+}
+
+.description-populaires h2 {
+    font-size:1em;
+    line-height: 1em;
+}
+
+.description-populaires p {
+    font-size:0.9em;
+    line-height: 1em;
+}
+
+.liste-populaires article {
+    height: 150px;
+    padding:7px;
+    margin-bottom:3%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
 }
