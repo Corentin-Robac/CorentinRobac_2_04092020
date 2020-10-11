@@ -21,7 +21,6 @@ html, header, body, footer {
 /*DEBUT HEADER*/
 
 header {
-    width:100vw;
     height:100px;
     display: flex;
     flex-direction: row;
@@ -224,13 +223,13 @@ h1 {
     border-radius: 30px;
     height:670px;
     padding:40px;
-    margin-right:1%;
+    margin-right:3%;
 }
 
 .liste-hebergements  {
     display: flex;
     flex-wrap:wrap;
-    justify-content: space-between;/* justify-content */
+    justify-content: space-between;
 }
 
 .liste-hebergements article {
@@ -255,6 +254,7 @@ h1 {
     display: flex;
     flex-direction: row;
     color: #3d8afd;
+    margin-top: auto;
 }
 
 .etoiles-grises {
@@ -291,13 +291,18 @@ h1 {
     width: 30%;
     height:670px;
     padding:40px;
-    margin-left: 1%;
+}
+
+.section_populaires a, .section_hebergements a {
+    color: black;
+    text-decoration: none;
 }
 
 .liste-populaires  {
     display: flex;
     flex-direction: column;
-    align-content: space-between; /*Ne fonctionne pas*/
+    justify-content: space-between;
+    height: 600px;
 }
 
 .header-populaire {
@@ -321,8 +326,10 @@ h1 {
 }
 
 .description-populaires {
+    display: inline-flex;
+    flex-direction: column;
     padding-top:0px;
-    padding-left:10px;
+    padding-left:20px;
     padding-bottom:10px;
     padding-right:10px;
     margin:0;
@@ -336,6 +343,7 @@ h1 {
 .description-populaires p {
     font-size:0.9em;
     line-height: 1em;
+    margin-top: 0;
 }
 
 .liste-populaires article {
@@ -352,6 +360,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 5%;
 }
 
 #title-act-mars {
@@ -432,4 +441,44 @@ h1 {
 .art-act, .art-act-demi {
     width: 23%;
     border-radius: 30px;
+}
+
+footer {
+    background-color: #F3F3F3;
+    height:max-content;
+    display: flex;
+}
+
+.footer-menu {
+    width:33%;
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer h1 {
+    margin-top: 0;
+}
+
+ul, li {
+    margin-left: 0;
+    margin-bottom:0;
+    padding-left: 0;
+    list-style: none;
+    line-height: 2em;
+  }
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-weight: bold;
+}
+
+.liste-hebergements article, .liste-populaires article, .art-act {
+    -webkit-box-shadow: 0px 3px 20px -1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 20px -1px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 20px -1px rgba(0,0,0,0.1);
 }
