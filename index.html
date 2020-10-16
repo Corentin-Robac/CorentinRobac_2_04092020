@@ -4,9 +4,7 @@
   <meta charset="utf-8">
   <title>Réservia</title>
   <link rel="stylesheet" href="style.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" crossorigin="anonymous"> <!--fontawesome-->
-
 </head>
 <header>
     <img id="logo" src="images/logo/Reservia@3x.png" alt="reservia">
@@ -14,6 +12,16 @@
         <a class="menu-link" href="#1" >Hébergements</a>
         <a class="menu-link" href="#2" >Activités</a>
         <a id="inscription" href="#3" >S'inscrire</a>
+    </nav>
+    <nav id="menu-mobile">
+        <div>
+            <img id="logo-mobile" src="images/logo/Reservia@3x.png" alt="reservia">
+            <a id="inscription" href="#3" >S'inscrire</a>
+        </div>
+        <div>
+            <a class="menu-link" href="#1" >Hébergements</a>
+            <a class="menu-link" href="#2" >Activités</a>
+        </div>
     </nav>
 </header>
 <body>
@@ -58,7 +66,7 @@
                         <img class="img-hebergements" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
                         <div class="description-hebergements">
                             <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de 25€</p>
+                            <p>Nuit à partir de <strong>25€</strong></p>
                             <div class="etoiles">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -72,7 +80,7 @@
                         <img class="img-hebergements" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                         <div class="description-hebergements">
                             <h2>Hôtel du port</h2>
-                            <p>Nuit à partir de 52€</p>
+                            <p>Nuit à partir de 52<strong>€</strong></p>
                             <div class="etoiles">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -86,7 +94,7 @@
                         <img class="img-hebergements" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
                         <div class="description-hebergements">
                             <h2>Hôtel Les mouettes</h2>
-                            <p>Nuit à partir de 76€</p>
+                            <p>Nuit à partir de 76<strong>€</strong></p>
                             <div class="etoiles">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -100,7 +108,7 @@
                         <img class="img-hebergements" src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                         <div class="description-hebergements">
                             <h2>Hôtel de la mer</h2>
-                            <p>Nuit à partir de 46€</p>
+                            <p>Nuit à partir de 46<strong>€</strong></p>
                             <div class="etoiles">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -114,7 +122,7 @@
                         <img class="img-hebergements" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
                         <div class="description-hebergements">
                             <h2>Auberge Le Panier</h2>
-                            <p>Nuit à partir de 23€</p>
+                            <p>Nuit à partir de <strong>23€</strong></p>
                             <div class="etoiles">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -128,7 +136,7 @@
                         <img class="img-hebergements" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                         <div class="description-hebergements">
                             <h2>Hôtel chez Amina</h2>
-                            <p>Nuit à partir de 96€</p>
+                            <p>Nuit à partir de 96<strong>€</strong></p>
                             <div class="etoiles">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -195,41 +203,35 @@
         <div class="part-2" id="2">
             <h2 id="title-act-mars">Activités à Marseille</h2>
             <section class="act-mars">
-                <article class="art-act">
-                    <img class="img-activites" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                <article id="bck-img-act-1" class="art-act">
                     <div class="description-activites">
                         <h2>Vieux port</h2>
                     </div>
                 </article>
                 <article class="art-act-demi">
-                    <div class="act-demi-1">
-                        <img class="img-activites-demi-grand" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                    <div id="bck-img-act-2" class="act-demi-1">
                         <div class="description-activites">
                             <h2>Fort de Pomègues</h2>
                     </div>
                 </div>
-                <div class="act-demi-2">
-                    <img class="img-activites-demi-petit" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                <div id="bck-img-act-3" class="act-demi-2">
                     <div class="description-activites">
                         <h2>Iles du Frioul</h2>
                     </div>
                 </div>
                 </article>
-                <article class="art-act">
-                    <img class="img-activites" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                <article id="bck-img-act-4" class="art-act">
                     <div class="description-activites">
                         <h2>Parc National des Calanques</h2>
                     </div>
                 </article>
                 <article class="art-act-demi">
-                    <div class="act-demi-2-2">
-                        <img class="img-activites-demi-petit" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                    <div id="bck-img-act-5" class="act-demi-2-2">
                         <div class="description-activites">
                             <h2>Notre-Dame-de-la-Garde</h2>
                         </div>
                     </div>
-                    <div class="act-demi-1-2">
-                        <img class="img-activites-demi-grand" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                    <div id="bck-img-act-6" class="act-demi-1-2">
                         <div class="description-activites">
                             <h2>Parc Longchamp</h2>
                     </div>
