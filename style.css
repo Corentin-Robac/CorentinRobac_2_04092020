@@ -100,7 +100,7 @@ h1 {
 }
 
 #pos {
-    background-color: rgb(243, 243, 243);
+    background-color: #f2f2f2;
     width:60px;
     height:60px;
     display: flex;
@@ -121,7 +121,7 @@ h1 {
     border-left-style: none;
     width:13vw; 
     min-width: 200px;
-    border:1px solid rgb(243, 243, 243);
+    border:1px solid #f2f2f2;
     font-size:1.1em;
     padding-left:15px;
     font-weight:bold;
@@ -142,7 +142,7 @@ h1 {
 }
 
 #btn-rechercher:hover{
-    background-color: #3d8afd;
+    background-color:#f2f2f2;
     cursor:  pointer;
 }
 
@@ -170,7 +170,7 @@ h1 {
     padding: 20px;
     color: #0065FC;
     border-radius: 30px;
-    background-color: #deebff;
+    background-color:#f2f2f2;
     width:20px;
     height:20px;
     display: flex;
@@ -187,7 +187,7 @@ h1 {
     padding-bottom:15px;
     font-weight: bold;
     font-size: 1.3em;
-    border:solid rgb(216, 215, 215) 2px;
+    border:solid #f2f2f2 2px;
     border-left:none;
     border-top-right-radius:30px;
     border-bottom-right-radius:30px;
@@ -196,7 +196,7 @@ h1 {
 }
 
 #icone-infos {
-    border:solid rgb(216, 215, 215) 2px;
+    border:solid #f2f2f2 2px;
     border-radius: 30px;
     width:25px;
     height:25px;
@@ -224,7 +224,7 @@ h1 {
 }
 
 .section_hebergements {
-    background-color: rgb(243, 243, 243);
+    background-color:#f2f2f2;
     border-radius: 30px;
     height:650px;
     padding:40px;
@@ -262,14 +262,14 @@ h1 {
 .etoiles {
     display: flex;
     flex-direction: row;
-    color: #3d8afd;
+    color: #0065FC;
     margin-top: auto;
 }
 
 .etoiles-grises {
     display: flex;
     flex-direction: row;
-    color: rgb(216, 216, 216);
+    color: #f2f2f2;
 }
 
 .description-hebergements {
@@ -296,7 +296,7 @@ h1 {
 }
 
 .section_populaires {
-    background-color: rgb(243, 243, 243);
+    background-color:#f2f2f2;
     border-radius: 30px;
     height:650px;
     padding:40px;
@@ -539,13 +539,13 @@ footer a:hover {
 
 /*DEBUT RESPONSIVE*/
 
-@media screen and (min-width: 1182px ) {
-    #menu-mobile {
+@media screen and (min-width: 1300px ) {
+    #menu-mobile, #search-2 {
         display: none;
     }
 }
 
-@media screen and (max-width: 1182px ) {
+@media screen and (max-width: 1300px ) {
     #nav {
         display: none;
     }
@@ -585,7 +585,7 @@ footer a:hover {
     #menu-mobile > div:nth-child(1) > a:nth-child(2) {
         width: max-content;
         margin-right: 6vw;
-        font-size: 2em;
+        font-size: 1.2em;
     }
     #menu-mobile > div:nth-child(2) {
         display: flex;
@@ -595,16 +595,164 @@ footer a:hover {
     }
     #menu-mobile > div:nth-child(2) > a:nth-child(1) {
         width: 50%;
-        font-size: 2em;
-        border-bottom: solid grey;
+        font-size: 1.2em;
+        border-bottom: solid#f2f2f2;
     }
     #menu-mobile > div:nth-child(2) > a:nth-child(2) {
         width: 50%;
-        font-size: 2em;
-        border-bottom: solid gray;
+        font-size: 1.2em;
+        border-bottom: solid #f2f2f2;
     }
-
-
+    .menu-link:hover {
+        border-top: none;
+        border-bottom:none;
+        border-bottom: solid #0065FC; /*Non pris en compte*/
+    }
+    .corps {
+        margin-top:5%;
+    }
+    .filtre_title {
+        width:100%;
+    }
+    .part-1 {
+        flex-direction:column;
+    }
+    .section_hebergements {
+        order:2;
+        margin-right: 0;
+        margin-top:3%;
+    }
+    .section_activites {
+        order:1;
+    }
 }
 
 
+#inscription-mobile {
+    text-decoration: none;
+    color:black;
+}
+#inscription-mobile:hover {
+    color:#0065FC;
+}
+
+#inscription-mobile {
+    color:#0065FC;
+    margin-right:5vw;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 860px ) {
+    .liste-hebergements article{
+        width:40%;
+    }
+    .section_hebergements {
+        height:max-content;
+    }
+    .art-act, .art-act-demi, #bck-img-act-1, #bck-img-act-4 {
+        width:47%;
+    }
+    .act-mars {
+        flex-wrap: wrap;
+    }
+    #bck-img-act-1 {
+        margin-bottom:5%;
+    }
+    #search-2 {
+        display: none;
+    }
+    .economique, .familial, .romantique, .animaux_autorises {
+        margin-right:30px; 
+        margin-left:0;
+    }
+    footer{
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .footer-menu {
+        width:auto;
+        padding-bottom: 0;
+        padding-left: 10%;
+        padding-top:10%;
+    }
+
+}
+
+@media screen and (max-width: 650px ) {
+    .section_populaires, .section_hebergements {
+        border-radius: 0;
+    }
+    .corps {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .corps > h1, .corps > h2, #recherche, .infos-logements {
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+    #search-1 {
+        display: none;
+    }
+    #search-2 {
+        display: block;
+    }
+    #btn-rechercher {
+        min-width:0;
+        font-size:1em;
+        width: 70px;
+        height: 60px;
+    }
+    #site-search {
+        width:100%;
+    }
+    #recherche {
+        width: 89%;
+    }
+    .filtre_title {
+        margin-left: 6vw; 
+        margin-bottom: 0;
+    }
+    #pos {
+        width:80px;
+    }
+    #btn-rechercher {
+        border-radius: 15px;
+    }
+    #centre-ville {
+        margin-bottom: 5%;
+        margin-top:0;
+    }
+    .section_hebergements {
+        background-color: white;
+    }
+    .filtre_title {
+        margin-left:0;
+    }
+    .section_filtre {
+        margin-left:6vw;
+    }
+    .liste-hebergements article {
+        width: 100%;
+    }
+    #bck-img-act-1, #bck-img-act-2, #bck-img-act-3, #bck-img-act-4, #bck-img-act-5, #bck-img-act-6 {
+        height: 230px;
+        width:100%;
+        margin-bottom: 5%;
+    }
+    .art-act-demi, .art-act {
+        width: 100%;
+    }
+    .part-2 {
+        padding:40px;
+        padding-top:0;
+    }
+    .art-act-demi {
+        height: max-content;
+    }
+}
+
+/*FIN RESPONSIVE*/
+
+/* responsive fonctionne mais pas en selectionnant "ipad", "iphone" etc */
+/* barre de recherche border-right */
+/* hover activités et hebergementn, border-bottom ne fonctionne pas ligne 609 */
