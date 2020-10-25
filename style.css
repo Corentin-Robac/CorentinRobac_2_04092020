@@ -7,6 +7,7 @@ html, header, body, footer {
 
 /* DEBUT FONTS*/
 
+/*Regular*/
 @font-face {
     font-family: 'Raleway';
     src: url('fonts/Raleway-Regular.ttf') format('truetype');
@@ -14,6 +15,7 @@ html, header, body, footer {
     font-style: normal;
 }
 
+/*Bold*/
 @font-face {
     font-family: 'Raleway';
     src: url('fonts/Raleway-Bold.ttf') format('truetype');
@@ -274,27 +276,27 @@ h1 {
 }
 
 #img-hebergements-1 {
-    background-image: url(images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-image: url(images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 
 #img-hebergements-2 {
-    background-image: url(images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-image: url(images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
 }
 
 #img-hebergements-3 {
-    background-image: url(images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-image: url(images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg);
 }
 
 #img-hebergements-4 {
-    background-image: url(images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-image: url(images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
 }
 
 #img-hebergements-5 {
-    background-image: url(images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-image: url(images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
 }
 
 #img-hebergements-6 {
-    background-image: url(images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-image: url(images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
 
 .etoiles {
@@ -380,13 +382,13 @@ h1 {
 }
 
 #img-populaires-1 {
-    background-image: url(images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-image: url(images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
 }
 #img-populaires-2 {
-    background-image: url(images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-image: url(images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg);
 }
 #img-populaires-3 {
-    background-image: url(images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-image: url(images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
 
 .description-populaires {
@@ -557,6 +559,10 @@ article:hover, .act-demi-1:hover, .act-demi-2:hover, .act-demi-1-2:hover, .act-d
     cursor:auto;
 }
 
+#logo {
+    width:30%;
+}
+
 /*FIN BODY*/
 
 /*DEBUT FOOTER*/
@@ -599,6 +605,7 @@ footer a:hover {
 
 /*DEBUT RESPONSIVE*/
 
+/*Desktop*/
 @media screen and (max-width: 1300px ) {
     .section_hebergements {
         order:2;
@@ -639,12 +646,12 @@ footer a:hover {
     }
 }
 
+/*Tablette*/
 @media screen and (min-width: 768px ) {
     #menu-mobile, #search-2 {
         display: none;
     }
 }
-
 @media screen and (max-width: 768px ) {
     #nav {
         display: none;
@@ -759,6 +766,7 @@ footer a:hover {
      }
 }
 
+/*Mobile*/
 @media screen and (max-width: 425px ) {
     #search-1 {
         display: none;
@@ -832,6 +840,53 @@ footer a:hover {
     .liste-hebergements article {
         margin-top: 5%;
     }
+
+    /*Changement résolution-img*/
+    #img-hebergements-1 {
+        background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    }
+    #img-hebergements-2 {
+        background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    }
+    #img-hebergements-3 {
+        background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    }
+    #img-hebergements-4 {
+        background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    }
+    #img-hebergements-5 {
+        background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    }
+    #img-hebergements-6 {
+        background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    }
+    #img-populaires-1 {
+        background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    }
+    #img-populaires-2 {
+        background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    }
+    #img-populaires-3 {
+        background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    }
+    #bck-img-act-1 {
+        background-image:url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) ;
+    }
+    #bck-img-act-2 {
+        background-image:url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) ;
+    }
+    #bck-img-act-3 {
+        background-image:url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) ;
+    }
+    #bck-img-act-4 {
+        background-image:url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) ;
+    }
+    #bck-img-act-5 {
+        background-image:url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) ;
+    }
+    #bck-img-act-6 {
+        background-image:url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) ;
+    }
 }
 
 #inscription-mobile {
@@ -841,12 +896,9 @@ footer a:hover {
 #inscription-mobile:hover {
     color:#0065FC;
 }
-
 #inscription-mobile {
     color:#0065FC;
     margin-right:5vw;
     font-weight: bold;
 }
 /*FIN RESPONSIVE*/
-
-/* responsive fonctionne mais pas en selectionnant "ipad", "iphone" etc --> viewport */
