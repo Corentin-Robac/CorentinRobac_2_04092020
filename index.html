@@ -20,7 +20,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/fav/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
-    <link rel="manifest" href="images/fav/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/fav/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -33,7 +32,7 @@
         <a class="menu-link" href="#2" >Activités</a>
         <a id="inscription" href="#3" >S'inscrire</a>
     </nav>
-    <nav id="menu-mobile">
+    <nav id="menu-mobile"> <!--Début menu mobile/tablette-->
         <div>
             <img id="logo-mobile" src="images/logo/Reservia@3x.png" alt="reservia">
             <a id="inscription-mobile" href="#3" >S'inscrire</a>
@@ -42,20 +41,20 @@
             <a class="menu-link" href="#1" >Hébergements</a>
             <a class="menu-link" href="#2" >Activités</a>
         </div>
-    </nav>
+    </nav> <!--Fin menu mobile/tablette-->
 </header>
 <body>
     <div class="corps">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <h2 id="centre-ville">En plein centre ville ou en pleine nature</h2>
-        <div id="recherche">
+        <div id="recherche"> <!--Search bar-->
             <div id="pos"><i class="fas fa-map-marker-alt"></i></div>
             <label for="site-search"></label>
             <input type="search" id="site-search" name="q"
             aria-label="Search through site content">
             <button id="btn-rechercher"><span id="search-1">Rechercher</span> <span id="search-2"><i class="fas fa-search"></i></span></button>
         </div>
-        <section class="section_filtre">
+        <section class="section_filtre"> <!--Filtes-->
             <h1 class="filtre_title">Filtres</h1>
             <div class="economique">
                 <i class="fas fa-money-bill-wave"></i>
@@ -79,6 +78,7 @@
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
         <div class="part-1" id="1">
+            <!--Début hébergements-->
             <section class="section_hebergements">
                 <h1>Hébergements à Marseille</h1>
                 <div class="liste-hebergements">
@@ -169,6 +169,8 @@
                 </div>
                 <a href="#"><h3>Afficher plus</h3></a>
             </section>
+            <!--Fin hébergements-->
+            <!--Début populaires-->
             <section class="section_populaires">
                 <div class="header-populaire">
                     <h1>Les plus populaires</h1>
@@ -219,9 +221,11 @@
                     </article>
                 </div>
             </section>
+            <!--Fin populaires-->
         </div>
         <div class="part-2" id="2">
             <h2 id="title-act-mars">Activités à Marseille</h2>
+            <!--Début activités-->
             <section class="act-mars">
                 <article id="bck-img-act-1" class="art-act">
                     <div class="description-activites">
@@ -258,6 +262,7 @@
                 </div>
                 </article>
             </section>
+            <!--Fin activités-->
         </div>
     </div>
 </body>

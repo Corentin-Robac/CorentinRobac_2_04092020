@@ -902,3 +902,10 @@ footer a:hover {
     font-weight: bold;
 }
 /*FIN RESPONSIVE*/
+
+
+
+#img-hebergements-1 :hover{
+    transform: scale(1.5);
+    transition: transform .5s ease;
+}
