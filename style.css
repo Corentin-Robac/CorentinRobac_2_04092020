@@ -494,6 +494,7 @@ h1 {
 .description-activites h2, .description-activites h3 {
     font-size: 1em;
     margin: 0;
+    font-weight: bold;;
 }
 
 .art-act-demi {
@@ -584,6 +585,7 @@ footer {
 
 footer p {
     margin-top: 0;
+    font-weight: bold;;
 }
 
 ul, li {
