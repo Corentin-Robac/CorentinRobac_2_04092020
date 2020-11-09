@@ -491,7 +491,7 @@ h1 {
     border-bottom-left-radius: 20px;
 }
 
-.description-activites p{
+.description-activites h2, .description-activites h3 {
     font-size: 1em;
     margin: 0;
 }
