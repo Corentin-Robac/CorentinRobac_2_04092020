@@ -560,7 +560,9 @@ article:hover, .act-demi-1:hover, .act-demi-2:hover, .act-demi-1-2:hover, .act-d
 }
 
 #logo {
-    width:30%;
+    width: max-content;
+    margin-left: 6vw;
+    object-position: left;
 }
 
 /*FIN BODY*/
