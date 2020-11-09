@@ -245,7 +245,7 @@ h1 {
     width:100%;
 }
 
-.section_hebergements > h1:nth-child(1) {
+.section_hebergements > h2:nth-child(1) {
     margin-top: 0;
     }
 
@@ -361,7 +361,7 @@ h1 {
     justify-content: space-between;
 }
 
-.header-populaire > h1 {
+.header-populaire > h2 {
     margin-top: 0;
     }
 
@@ -491,7 +491,7 @@ h1 {
     border-bottom-left-radius: 20px;
 }
 
-.description-activites h1 {
+.description-activites p{
     font-size: 1em;
     margin: 0;
 }
@@ -582,7 +582,7 @@ footer {
     padding-bottom: 100px;
 }
 
-footer h1 {
+footer p {
     margin-top: 0;
 }
 
